@@ -52,11 +52,11 @@ if st.button("Prediksi Penyakit Jantung"):
         st.error("**Pasien Berisiko Terdiagnosa Penyakit Jantung!**", icon="⚠️")
     else:
         st.success("**Pasien Tidak Terdiagnosa Penyakit Jantung.**", icon="✅")
-
+    
     st.subheader("📈 Probabilitas Diagnosa")
-        col1, col2 = st.columns([4, 1])  
-        with col1:
-            st.progress(probability)
-        with col2:
-            st.write(f"**{probability*100:.2f}%**")
+    col1, col2 = st.columns([4, 1])  
+    with col1:
+        st.progress(probability)
+    with col2:
+        st.write(f"**{probability*100:.2f}%**")
     
