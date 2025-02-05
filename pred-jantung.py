@@ -58,4 +58,4 @@ if st.button("Prediksi Penyakit Jantung"):
     with col1:
         st.progress(probability)
     with col2:
-        st.write(f"**{int(probability*100)}%**")
+        st.write(f"**{round(probability * 100)}%**")  
